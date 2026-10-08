@@ -1,0 +1,6 @@
+IncidentID,Date,Department,Severity,Cause
+I001,2026-09-01,Blasting,High,Explosive misfire
+I002,2026-09-05,Drilling,Medium,Equipment malfunction
+I003,2026-09-10,Transport,Low,Worker fatigue
+I004,2026-09-15,Maintenance,High,Electrical fault
+I005,2026-09-20,Blasting,Critical,Improper PPE
