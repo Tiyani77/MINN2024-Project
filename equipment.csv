@@ -1,0 +1,6 @@
+EquipID,Type,OperatingHours,Condition,MaintenanceStatus
+E001,Drill,1200,Warning,Overdue
+E002,Truck,800,Normal,Up-to-date
+E003,Crusher,2000,Critical,Overdue
+E004,Conveyor,500,Normal,Up-to-date
+E005,Loader,1500,Warning,Due soon
