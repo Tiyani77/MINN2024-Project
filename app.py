@@ -50,7 +50,6 @@ st.bar_chart(incidents_chart)
 st.subheader("PPE Compliance Overview")
 ppe_chart = workers["PPE_Compliance"].value_counts()
 st.bar_chart(ppe_chart)
-
 # Equipment condition
 st.subheader("Equipment Condition Status")
 condition_chart = equipment["Condition"].value_counts()
