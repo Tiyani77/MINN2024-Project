@@ -38,4 +38,21 @@ if not critical_equipment.empty:
 critical_incidents = incidents[incidents["Severity"] == "Critical"]
 if not critical_incidents.empty:
     st.error("🚨 Critical incidents recorded:")
+
+st.header("Visual Insights")
+
+# Incidents per department
+st.subheader("Incidents per Department")
+incidents_chart = incidents["Department"].value_counts()
+st.bar_chart(incidents_chart)
+
+# PPE compliance
+st.subheader("PPE Compliance Overview")
+ppe_chart = workers["PPE_Compliance"].value_counts()
+st.bar_chart(ppe_chart)
+
+# Equipment condition
+st.subheader("Equipment Condition Status")
+condition_chart = equipment["Condition"].value_counts()
+st.bar_chart(condition_chart)
     st.dataframe(critical_incidents)
