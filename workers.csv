@@ -1,0 +1,6 @@
+WorkerID,Name,Department,PPE_Compliance,Fatigue_Level,Incidents
+W001,John,Blasting,Yes,Low,0
+W002,Sarah,Drilling,No,High,2
+W003,Peter,Maintenance,Yes,Medium,1
+W004,Linda,Transport,Yes,Low,0
+W005,David,Blasting,No,High,3
