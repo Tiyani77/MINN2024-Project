@@ -19,7 +19,7 @@ st.dataframe(equipment)
 st.subheader("Incidents Data")
 st.dataframe(incidents)
 
-# --- Step 5: Analysis & Alerts ---
+
 st.header("Risk Analysis & Alerts")
 
 # Worker fatigue alerts
@@ -38,6 +38,8 @@ if not critical_equipment.empty:
 critical_incidents = incidents[incidents["Severity"] == "Critical"]
 if not critical_incidents.empty:
     st.error("🚨 Critical incidents recorded:")
+    st.dataframe(critical_incidents)
+
 
 st.header("Visual Insights")
 
@@ -50,8 +52,8 @@ st.bar_chart(incidents_chart)
 st.subheader("PPE Compliance Overview")
 ppe_chart = workers["PPE_Compliance"].value_counts()
 st.bar_chart(ppe_chart)
+
 # Equipment condition
 st.subheader("Equipment Condition Status")
 condition_chart = equipment["Condition"].value_counts()
 st.bar_chart(condition_chart)
-    st.dataframe(critical_incidents)
